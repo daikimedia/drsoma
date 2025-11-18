@@ -1,0 +1,11 @@
+{
+  "pre": "Company_Admin_",
+  "apiUrls": {
+    "master": "https://core-api.xubtest.com/",
+    "fileManager": "https://filemanager-api.xubtest.com/"
+  },
+  "appUrls": {
+    "auth": "http://localhost:4200",
+    "myAccount": "http://localhost:4300"
+  }
+}

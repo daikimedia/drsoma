@@ -1,0 +1,311 @@
+// tailwind imports
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// font import from google
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+// setting common variables
+
+:root {
+  // color variables
+
+  --primary: #ea622f;
+  --secondary: #fff5e6;
+  --white: #ffffff;
+  --black: #0f0f0f;
+  --stroke: #f18f01;
+  --header-black: #101010;
+  --para-black: #707070;
+  --para-white: #f8f8f8;
+  --para-italic: #6b6b6b;
+  --para-input: #2d2e2e;
+
+  //   font variables
+
+  --primary-font: "Mulish", serif;
+}
+
+// common styles
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Announcement ticker animations
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideInUp {
+  animation: slideInUp 0.6s ease-out forwards;
+}
+
+// WhatsApp button pulse animation
+@keyframes whatsappPulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-whatsapp-pulse {
+  animation: whatsappPulse 2s ease-in-out infinite;
+}
+
+html,
+body {
+  font-family: var(--primary-font);
+  color: var(--header-black);
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+.flex {
+  flex-wrap: wrap;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+#__next {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-inline: 30px;
+  width: 100%;
+}
+
+.containers {
+  max-width: 1166px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.95) 10.94%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+button,
+.btn,
+p,
+.p,
+p.para-small,
+.para-small,
+p.italic,
+.italic,
+p.italic-small,
+.italic-small {
+  font-family: var(--primary-font);
+}
+
+h1,
+.h1 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 3.84px;
+  text-transform: capitalize;
+}
+
+h2,
+.h2 {
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 143.59% */
+  letter-spacing: 1.17px;
+  text-transform: uppercase;
+}
+
+h3,
+.h3 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40.5px; /* 162% */
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32.36px; /* 161.8% */
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+h5,
+.h5 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25.888px; /* 161.8% */
+  letter-spacing: 0.48px;
+  text-transform: capitalize;
+}
+
+button,
+.btn {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 25.888px; /* 161.8% */
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+
+p,
+.p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.888px; /* 161.8% */
+  letter-spacing: 0.48px;
+}
+
+p.para-small,
+.para-small {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.652px; /* 161.8% */
+  letter-spacing: 0.42px;
+}
+
+p.italic,
+.italic {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 25.888px; /* 161.8% */
+  letter-spacing: 0.48px;
+}
+
+p.italic-small,
+.italic-small {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 25.888px; /* 184.914% */
+  letter-spacing: 0.42px;
+}
+
+.logo-scroll-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.logo-scroll {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-scroll {
+    animation: scroll 15s linear infinite; /* Adjust speed for smaller screens */
+  }
+}

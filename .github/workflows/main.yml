@@ -1,0 +1,176 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Deploy Environment
+
+on:
+  push:
+    branches: 
+      - master
+      - test
+      
+  pull_request:
+    branches: 
+      - master
+      - test
+      
+  workflow_dispatch:   
+  
+jobs:
+  deploy-test:
+    if: ${{ github.ref == 'refs/heads/test' }}
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.10.0
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Create testing environment file
+        run: |
+          cat > .env.testing << EOF
+          NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_API_URL_TEST }}
+          NEXT_PUBLIC_CMS_API_KEY=${{ secrets.NEXT_PUBLIC_CMS_API_KEY_TEST }}
+          NEXT_PUBLIC_ENGAGEUB_FORM_ID=${{ secrets.NEXT_PUBLIC_ENGAGEUB_FORM_ID_TEST }}
+          NEXT_PUBLIC_SITE_URL=${{ secrets.NEXT_PUBLIC_SITE_URL_TEST }}
+          NEXT_PUBLIC_GA_ID=${{ secrets.NEXT_PUBLIC_GA_ID_TEST }}
+          MAILGUN_API_KEY=${{ secrets.MAILGUN_API_KEY_TEST }}
+          MAILGUN_DOMAIN=${{ secrets.MAILGUN_DOMAIN_TEST }}
+          CONTACT_FORM_RECIPIENTS=${{ secrets.CONTACT_FORM_RECIPIENTS_TEST }}
+          YOUTUBE_API_KEY=${{ secrets.YOUTUBE_API_KEY_TEST }}
+          YOUTUBE_CHANNEL_ID=${{ secrets.YOUTUBE_CHANNEL_ID_TEST }}
+          EOF
+
+      - name: Build for testing environment
+        run: npm run build:testing
+        env:
+          NODE_ENV: testing
+        
+      - name: Copy files to test server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST_TEST }}
+          username: root
+          port: 22
+          key: ${{ secrets.SSH_KEY_TEST }}
+          source: "."
+          target: /website/test
+          strip_components: 0
+        continue-on-error: false
+
+      - name: Wait for file transfer
+        run: sleep 10
+
+      - name: Deploy to test server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST_TEST }}
+          username: root
+          port: 22
+          key: ${{ secrets.SSH_KEY_TEST }}
+          timeout: 10m
+          script: |
+            cd /website/test
+            echo "Installing dependencies..."
+            npm install --legacy-peer-deps --omit=dev --prefer-offline
+            echo "Stopping existing PM2 process..."
+            sudo pm2 delete drsoma-test || true
+            echo "Starting new PM2 process..."
+            sudo pm2 start --name=drsoma-test npm -- start -- -p 4000
+            echo "Saving PM2 configuration..."
+            sudo pm2 save
+            echo "Deployment completed successfully!"
+          
+      - name: Google Chat Notification - Test
+        uses: Co-qn/google-chat-notification@v1
+        with:
+           name: Test Build
+           url: ${{ secrets.GOOGLE_CHAT_ALERT_TEST }}
+           status: ${{ job.status }}
+        if: always()
+        
+  deploy-master:
+    if: ${{ github.ref == 'refs/heads/master' }}
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.10.0
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Create production environment file
+        run: |
+          cat > .env.production << EOF
+          NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_API_URL_PROD }}
+          NEXT_PUBLIC_CMS_API_KEY=${{ secrets.NEXT_PUBLIC_CMS_API_KEY_PROD }}
+          NEXT_PUBLIC_ENGAGEUB_FORM_ID=${{ secrets.NEXT_PUBLIC_ENGAGEUB_FORM_ID_PROD }}
+          NEXT_PUBLIC_SITE_URL=${{ secrets.NEXT_PUBLIC_SITE_URL_PROD }}
+          NEXT_PUBLIC_GA_ID=${{ secrets.NEXT_PUBLIC_GA_ID_PROD }}
+          MAILGUN_API_KEY=${{ secrets.MAILGUN_API_KEY_PROD }}
+          MAILGUN_DOMAIN=${{ secrets.MAILGUN_DOMAIN_PROD }}
+          CONTACT_FORM_RECIPIENTS=${{ secrets.CONTACT_FORM_RECIPIENTS_PROD }}
+          YOUTUBE_API_KEY=${{ secrets.YOUTUBE_API_KEY_PROD }}
+          YOUTUBE_CHANNEL_ID=${{ secrets.YOUTUBE_CHANNEL_ID_PROD }}
+          EOF
+
+      - name: Build for production environment
+        run: npm run build:production
+        env:
+          NODE_ENV: production
+        
+      - name: Copy files to production server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST_PROD }}
+          username: root
+          port: 22
+          key: ${{ secrets.SSH_KEY_PROD }}
+          source: "."
+          target: /website/prod
+          strip_components: 0
+        continue-on-error: false
+
+      - name: Wait for file transfer
+        run: sleep 10
+        
+      - name: Deploy to production server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST_PROD }}
+          username: root
+          port: 22
+          key: ${{ secrets.SSH_KEY_PROD }}
+          timeout: 10m
+          script: |
+            cd /website/prod
+            echo "Installing dependencies..."
+            npm install --legacy-peer-deps --omit=dev --prefer-offline
+            echo "Stopping existing PM2 process..."
+            sudo pm2 delete drsoma-prod || true
+            echo "Starting new PM2 process..."
+            sudo pm2 start --name=drsoma-prod npm -- start -- -p 3000
+            echo "Saving PM2 configuration..."
+            sudo pm2 save
+            echo "Deployment completed successfully!"
+            
+      - name: Google Chat Notification - Production
+        uses: Co-qn/google-chat-notification@v1
+        with:
+           name: Production Build
+           url: ${{ secrets.GOOGLE_CHAT_ALERT_PROD }}
+           status: ${{ job.status }}
+        if: always()

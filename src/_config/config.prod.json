@@ -1,0 +1,11 @@
+{
+  "pre": "Company_Admin_",
+  "apiUrls": {
+    "master": "https://core-api.nexub.com/",
+    "fileManager": "https://filemanager-api.nexub.com/"
+  },
+  "appUrls": {
+    "auth": "https://auth.nexub.com",
+    "myAccount": "https://myaccount.nexub.com"
+  }
+}
