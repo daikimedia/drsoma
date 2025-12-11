@@ -61,8 +61,8 @@ const Header = () => {
                     Success Stories
                   </h5>
                 </Link>
-                <Link href={"/blogs"}>
-                  <h5 className={linkClasses("/blogs")}>Blog</h5>
+                <Link href={"/blog"}>
+                  <h5 className={linkClasses("/blog")}>Blog</h5>
                 </Link>
                 <Link href={"/contact-us"}>
                   <h5 className={linkClasses("/contact-us")}>Contact</h5>
@@ -109,8 +109,8 @@ const Header = () => {
           <Link href={"/success-stories"} onClick={handleSideNav}>
             <h5 className={linkClasses("/success-stories")}>Success Stories</h5>
           </Link>
-          <Link href={"/blogs"} onClick={handleSideNav}>
-            <h5 className={linkClasses("/blogs")}>Blog</h5>
+          <Link href={"/blog"} onClick={handleSideNav}>
+            <h5 className={linkClasses("/blog")}>Blog</h5>
           </Link>
           <Link href={"/contact-us"} onClick={handleSideNav}>
             <h5 className={linkClasses("/contact-us")}>Contact</h5>
