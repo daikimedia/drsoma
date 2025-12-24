@@ -161,7 +161,7 @@ export default function BreastLiftMalaysia() {
         }
       `}</style>
 
-      <main className="breast-lift-page bg-white text-zinc-900">
+      <main className="breast-lift-page bg-white text-header-black">
         {/* Hero Section */}
         <section className="relative pt-20 pb-20 md:pt-32 md:pb-24 px-6 overflow-hidden">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -170,11 +170,11 @@ export default function BreastLiftMalaysia() {
                 <span className="w-1.5 h-1.5 rounded-full bg-[#FE7623] animate-pulse"></span>
                 Breast Lift Malaysia (Mastopexy)
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-zinc-900 leading-[1.1] mb-6 animate-fadeInUp opacity-0" style={{animationDelay: '0.2s', animationFillMode: 'forwards'}}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-header-black leading-[1.1] mb-6 animate-fadeInUp opacity-0" style={{animationDelay: '0.2s', animationFillMode: 'forwards'}}>
                 Lift. Reshape. <br />
-                <span className="text-zinc-400">Restore Natural Youthful Contour.</span>
+                <span className="text-para-black">Restore Natural Youthful Contour.</span>
               </h1>
-              <p className="text-lg text-zinc-500 leading-relaxed mb-8 max-w-xl animate-fadeInUp opacity-0" style={{animationDelay: '0.3s', animationFillMode: 'forwards'}}>
+              <p className="text-lg text-para-black leading-relaxed mb-8 max-w-xl animate-fadeInUp opacity-0" style={{animationDelay: '0.3s', animationFillMode: 'forwards'}}>
                 Performed by a Certified Plastic Surgeon. Tailored to your anatomy to elevate sagging tissue and reposition the nipple for a balanced, youthful silhouette.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fadeInUp opacity-0" style={{animationDelay: '0.4s', animationFillMode: 'forwards'}}>
@@ -182,7 +182,7 @@ export default function BreastLiftMalaysia() {
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
                   Book Consultation (WhatsApp)
                 </a>
-                <a href="#procedure" className="inline-flex justify-center items-center gap-2 bg-white border border-zinc-200 text-zinc-700 px-8 py-4 rounded-md text-sm font-medium hover:bg-zinc-50 hover:border-[#FE7623] hover:text-[#FE7623] hover:scale-105 transition-all duration-300">
+                <a href="#procedure" className="inline-flex justify-center items-center gap-2 bg-white border border-zinc-200 text-header-black px-8 py-4 rounded-md text-sm font-medium hover:bg-zinc-50 hover:border-[#FE7623] hover:text-[#FE7623] hover:scale-105 transition-all duration-300">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                   Procedure Details
                 </a>
@@ -205,34 +205,34 @@ export default function BreastLiftMalaysia() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               <div data-animate="def-1" className={`transition-all duration-700 ${isVisible('def-1') ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-                <h2 className="text-3xl font-semibold text-zinc-900 mb-6">What Is a Breast Lift?</h2>
-                <p className="text-zinc-600 leading-relaxed mb-6">
-                  A breast lift, or <span className="text-[#FE7623] font-semibold">mastopexy</span>, is a surgical procedure designed to raise and reshape sagging breasts. Major medical institutions such as the <span className="font-semibold text-zinc-900">Mayo Clinic</span> describe breast lift surgery as a method to raise and reshape breasts when changes from aging, pregnancy, or weight fluctuations cause sagging.
+                <h2 className="text-3xl font-semibold text-header-black mb-6">What Is a Breast Lift?</h2>
+                <p className="text-para-black leading-relaxed mb-6">
+                  A breast lift, or <span className="text-[#FE7623] font-semibold">mastopexy</span>, is a surgical procedure designed to raise and reshape sagging breasts. Major medical institutions such as the <span className="font-semibold text-header-black">Mayo Clinic</span> describe breast lift surgery as a method to raise and reshape breasts when changes from aging, pregnancy, or weight fluctuations cause sagging.
                 </p>
-                <p className="text-zinc-600 leading-relaxed mb-8">
+                <p className="text-para-black leading-relaxed mb-8">
                   It involves removing excess stretched skin, repositioning breast tissue to a higher position, and elevating the nipple and areola to a natural level.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4 p-4 bg-white rounded-lg border border-zinc-100 hover:border-[#FE7623]/50 hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
                     <div className="mt-1 min-w-[20px] text-[#FE7623] group-hover:scale-110 transition-transform"><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg></div>
                     <div>
-                      <h4 className="text-sm font-semibold text-zinc-900">Nipple Elevation</h4>
-                      <p className="text-xs text-zinc-500 mt-1">Repositions downward-pointing nipples to a youthful level.</p>
+                      <h4 className="text-sm font-semibold text-header-black">Nipple Elevation</h4>
+                      <p className="text-xs text-para-black mt-1">Repositions downward-pointing nipples to a youthful level.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4 p-4 bg-white rounded-lg border border-zinc-100 hover:border-[#FE7623]/50 hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
                     <div className="mt-1 min-w-[20px] text-[#FE7623] group-hover:scale-110 transition-transform"><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243z" /></svg></div>
                     <div>
-                      <h4 className="text-sm font-semibold text-zinc-900">Skin Reduction</h4>
-                      <p className="text-xs text-zinc-500 mt-1">Removes excess stretched skin envelope for firmness.</p>
+                      <h4 className="text-sm font-semibold text-header-black">Skin Reduction</h4>
+                      <p className="text-xs text-para-black mt-1">Removes excess stretched skin envelope for firmness.</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div data-animate="def-2" className={`transition-all duration-700 delay-200 ${isVisible('def-2') ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-                <h3 className="text-2xl font-semibold text-zinc-900 mb-6">Why Breasts Sag (Ptosis)</h3>
-                <p className="text-sm text-zinc-500 mb-6">Breasts naturally change over time due to various factors. Sagging is common, normal, and treatable.</p>
+                <h3 className="text-2xl font-semibold text-header-black mb-6">Why Breasts Sag (Ptosis)</h3>
+                <p className="text-sm text-para-black mb-6">Breasts naturally change over time due to various factors. Sagging is common, normal, and treatable.</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                   {[
                     { icon: "M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z", title: "Pregnancy & Nursing", desc: "Volume changes stretch the skin." },
@@ -242,13 +242,13 @@ export default function BreastLiftMalaysia() {
                   ].map((item, i) => (
                     <div key={i} className="p-4 bg-white rounded-lg border border-zinc-200 hover:border-[#FE7623] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
                       <svg className="w-5 h-5 text-[#FE7623] mb-3 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={item.icon} /></svg>
-                      <h4 className="text-sm font-semibold text-zinc-900">{item.title}</h4>
-                      <p className="text-xs text-zinc-500 mt-1">{item.desc}</p>
+                      <h4 className="text-sm font-semibold text-header-black">{item.title}</h4>
+                      <p className="text-xs text-para-black mt-1">{item.desc}</p>
                     </div>
                   ))}
                 </div>
-                <h4 className="text-sm font-bold text-zinc-900 uppercase mb-3">Common Concerns Addressed:</h4>
-                <ul className="space-y-2 text-sm text-zinc-600">
+                <h4 className="text-sm font-bold text-header-black uppercase mb-3">Common Concerns Addressed:</h4>
+                <ul className="space-y-2 text-sm text-para-black">
                   {["Breasts that sit lower on the chest", "Loss of firmness and projection", "Stretched or enlarged areolas", "Breast asymmetry due to sagging"].map((item, i) => (
                     <li key={i} className="flex items-center gap-2 hover:text-[#FE7623] transition-colors cursor-pointer">
                       <div className="w-1.5 h-1.5 rounded-full bg-[#FE7623]"></div> {item}
@@ -263,8 +263,8 @@ export default function BreastLiftMalaysia() {
         {/* How It Works */}
         <section className="py-24 px-6 bg-white border-b border-zinc-100">
           <div data-animate="how-it-works" className={`max-w-4xl mx-auto text-center mb-12 transition-all duration-700 ${isVisible('how-it-works') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="text-3xl font-semibold text-zinc-900 mb-4">How a Breast Lift Works</h2>
-            <p className="text-zinc-500 text-sm max-w-2xl mx-auto">Dr. Soma prioritizes natural breast proportions, stable nipple positioning, and long-term shape support.</p>
+            <h2 className="text-3xl font-semibold text-header-black mb-4">How a Breast Lift Works</h2>
+            <p className="text-para-black text-sm max-w-2xl mx-auto">Dr. Soma prioritizes natural breast proportions, stable nipple positioning, and long-term shape support.</p>
           </div>
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -275,8 +275,8 @@ export default function BreastLiftMalaysia() {
             ].map((step, i) => (
               <div key={i} data-animate={`step-${i}`} className={`p-6 bg-zinc-50 rounded-xl hover:bg-[#FE7623] hover:text-white group transition-all duration-500 hover:-translate-y-2 hover:shadow-xl cursor-pointer ${isVisible(`step-${i}`) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{transitionDelay: `${i * 100}ms`}}>
                 <span className="block text-2xl font-bold text-[#FE7623] mb-2 group-hover:text-white transition-colors">{step.num}</span>
-                <h3 className="text-sm font-bold text-zinc-900 mb-2 group-hover:text-white transition-colors">{step.title}</h3>
-                <p className="text-xs text-zinc-500 leading-relaxed group-hover:text-white/80 transition-colors">{step.desc}</p>
+                <h3 className="text-sm font-bold text-header-black mb-2 group-hover:text-white transition-colors">{step.title}</h3>
+                <p className="text-xs text-para-black leading-relaxed group-hover:text-white/80 transition-colors">{step.desc}</p>
               </div>
             ))}
           </div>
@@ -286,8 +286,8 @@ export default function BreastLiftMalaysia() {
         <section id="types" className="py-24 px-6 bg-zinc-50">
           <div className="max-w-7xl mx-auto">
             <div data-animate="types-header" className={`mb-16 max-w-2xl transition-all duration-700 ${isVisible('types-header') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <h2 className="text-3xl font-semibold text-zinc-900 mb-4">Types of Breast Lift Offered</h2>
-              <p className="text-zinc-500 text-sm">The best technique depends on the degree of sagging, breast size, and skin quality.</p>
+              <h2 className="text-3xl font-semibold text-header-black mb-4">Types of Breast Lift Offered</h2>
+              <p className="text-para-black text-sm">The best technique depends on the degree of sagging, breast size, and skin quality.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
@@ -302,10 +302,10 @@ export default function BreastLiftMalaysia() {
                       <svg className="w-16 h-16 text-[#FE7623]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     </div>
                   )}
-                  <div className={`w-12 h-12 ${type.dark ? 'bg-[#FE7623] text-white' : 'bg-zinc-50 text-zinc-900 group-hover:bg-[#FE7623] group-hover:text-white'} rounded-lg flex items-center justify-center mb-6 font-bold transition-all duration-300`}>{type.num}</div>
-                  <h3 className={`text-base font-semibold ${type.dark ? 'text-white' : 'text-zinc-900'} mb-2`}>{type.title}</h3>
-                  <p className={`text-xs ${type.dark ? 'text-zinc-400' : 'text-[#FE7623]'} font-mono mb-4 uppercase`}>{type.sub}</p>
-                  <p className={`text-sm ${type.dark ? 'text-zinc-400' : 'text-zinc-600'} leading-relaxed`}>{type.desc}</p>
+                  <div className={`w-12 h-12 ${type.dark ? 'bg-[#FE7623] text-white' : 'bg-zinc-50 text-header-black group-hover:bg-[#FE7623] group-hover:text-white'} rounded-lg flex items-center justify-center mb-6 font-bold transition-all duration-300`}>{type.num}</div>
+                  <h3 className={`text-base font-semibold ${type.dark ? 'text-white' : 'text-header-black'} mb-2`}>{type.title}</h3>
+                  <p className={`text-xs ${type.dark ? 'text-para-black' : 'text-[#FE7623]'} font-mono mb-4 uppercase`}>{type.sub}</p>
+                  <p className={`text-sm ${type.dark ? 'text-para-black' : 'text-para-black'} leading-relaxed`}>{type.desc}</p>
                 </div>
               ))}
             </div>
@@ -317,10 +317,10 @@ export default function BreastLiftMalaysia() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               <div data-animate="table-1" className={`transition-all duration-700 ${isVisible('table-1') ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-                <h3 className="text-xl font-semibold text-zinc-900 mb-6 flex items-center gap-3">What a Breast Lift Improves</h3>
+                <h3 className="text-xl font-semibold text-header-black mb-6 flex items-center gap-3">What a Breast Lift Improves</h3>
                 <div className="border border-zinc-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
                   <table className="w-full text-sm text-left">
-                    <thead className="bg-zinc-50 text-zinc-900 font-semibold border-b border-zinc-200">
+                    <thead className="bg-zinc-50 text-header-black font-semibold border-b border-zinc-200">
                       <tr><th className="p-4">Area</th><th className="p-4">Improvement</th></tr>
                     </thead>
                     <tbody className="divide-y divide-zinc-100">
@@ -332,8 +332,8 @@ export default function BreastLiftMalaysia() {
                         { area: "Upper Fullness", imp: "Improves projection (add implants if volume is low)" }
                       ].map((row, i) => (
                         <tr key={i} className="hover:bg-zinc-50 transition-colors">
-                          <td className="p-4 font-medium text-zinc-900">{row.area}</td>
-                          <td className="p-4 text-zinc-500">{row.imp}</td>
+                          <td className="p-4 font-medium text-header-black">{row.area}</td>
+                          <td className="p-4 text-para-black">{row.imp}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -341,13 +341,13 @@ export default function BreastLiftMalaysia() {
                 </div>
               </div>
               <div data-animate="table-2" className={`transition-all duration-700 ${isVisible('table-2') ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-                <h3 className="text-xl font-semibold text-zinc-900 mb-6 flex items-center gap-3">
+                <h3 className="text-xl font-semibold text-header-black mb-6 flex items-center gap-3">
                   Lift vs. Augmentation
                   <span className="text-[10px] uppercase bg-orange-100 text-[#FE7623] px-2 py-1 rounded font-bold animate-pulse">Guide</span>
                 </h3>
                 <div className="border border-zinc-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
                   <table className="w-full text-sm text-left">
-                    <thead className="bg-zinc-50 text-zinc-900 font-semibold border-b border-zinc-200">
+                    <thead className="bg-zinc-50 text-header-black font-semibold border-b border-zinc-200">
                       <tr><th className="p-4">Feature</th><th className="p-4">Breast Lift</th><th className="p-4">Augmentation</th></tr>
                     </thead>
                     <tbody className="divide-y divide-zinc-100">
@@ -358,9 +358,9 @@ export default function BreastLiftMalaysia() {
                         { feat: "Reduces Skin", lift: "Yes", aug: "No", liftHighlight: true }
                       ].map((row, i) => (
                         <tr key={i} className="hover:bg-zinc-50 transition-colors">
-                          <td className="p-4 text-zinc-500">{row.feat}</td>
-                          <td className={`p-4 ${row.liftHighlight ? 'font-semibold text-[#FE7623]' : 'text-zinc-400'}`}>{row.lift}</td>
-                          <td className={`p-4 ${!row.liftHighlight ? 'font-semibold text-[#FE7623]' : 'text-zinc-400'}`}>{row.aug}</td>
+                          <td className="p-4 text-para-black">{row.feat}</td>
+                          <td className={`p-4 ${row.liftHighlight ? 'font-semibold text-[#FE7623]' : 'text-para-black'}`}>{row.lift}</td>
+                          <td className={`p-4 ${!row.liftHighlight ? 'font-semibold text-[#FE7623]' : 'text-para-black'}`}>{row.aug}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -382,8 +382,8 @@ export default function BreastLiftMalaysia() {
           <div className="max-w-7xl mx-auto">
             <div data-animate="evidence" className={`text-center mb-12 transition-all duration-700 ${isVisible('evidence') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <h3 className="text-2xl font-semibold mb-4 text-white">Scientific Evidence & Authority</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed max-w-2xl mx-auto">The surgical principles behind mastopexy are well established in aesthetic plastic surgery literature.</p>
-              <div className="flex flex-wrap justify-center gap-2 text-xs font-mono text-zinc-500 mt-4">
+              <p className="text-para-black text-sm leading-relaxed max-w-2xl mx-auto">The surgical principles behind mastopexy are well established in aesthetic plastic surgery literature.</p>
+              <div className="flex flex-wrap justify-center gap-2 text-xs font-mono text-para-black mt-4">
                 <span className="hover:text-[#FE7623] transition-colors cursor-pointer">#mastopexy</span>
                 <span className="hover:text-[#FE7623] transition-colors cursor-pointer">#breastptosis</span>
                 <span className="hover:text-[#FE7623] transition-colors cursor-pointer">#nipple-areola</span>
@@ -399,9 +399,9 @@ export default function BreastLiftMalaysia() {
                 <a key={i} href={source.url} target="_blank" rel="noopener noreferrer" className="block p-4 rounded-lg bg-zinc-800 border border-zinc-700 hover:border-[#FE7623] hover:bg-zinc-800/80 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
                   <div className="flex items-center justify-between">
                     <span className="font-semibold text-white group-hover:text-[#FE7623] transition-colors">{source.name}</span>
-                    <svg className="w-4 h-4 text-zinc-500 group-hover:text-[#FE7623] group-hover:rotate-12 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                    <svg className="w-4 h-4 text-para-black group-hover:text-[#FE7623] group-hover:rotate-12 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
                   </div>
-                  <p className="text-xs text-zinc-400 mt-2 group-hover:text-zinc-300 transition-colors">{source.desc}</p>
+                  <p className="text-xs text-para-black mt-2 group-hover:text-white/70 transition-colors">{source.desc}</p>
                 </a>
               ))}
             </div>
@@ -413,7 +413,7 @@ export default function BreastLiftMalaysia() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               <div data-animate="recovery" id="recovery" className={`transition-all duration-700 ${isVisible('recovery') ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-                <h3 className="text-xl font-semibold text-zinc-900 mb-8">Post-Operative Recovery</h3>
+                <h3 className="text-xl font-semibold text-header-black mb-8">Post-Operative Recovery</h3>
                 <div className="relative pl-8 border-l-2 border-zinc-200 space-y-10">
                   {[
                     { title: "Immediate / Week 1", desc: "Support bra applied. Mild soreness. Return to desk work (comfort dependent). Avoid lifting.", active: true },
@@ -423,19 +423,19 @@ export default function BreastLiftMalaysia() {
                   ].map((step, i) => (
                     <div key={i} className="relative group cursor-pointer">
                       <div className={`absolute -left-[39px] w-5 h-5 rounded-full border-4 transition-all duration-300 group-hover:scale-125 ${step.active ? 'bg-[#FE7623] border-white shadow-sm' : 'bg-white border-zinc-200 group-hover:bg-[#FE7623] group-hover:border-white'}`}></div>
-                      <h4 className="text-sm font-bold text-zinc-900 uppercase group-hover:text-[#FE7623] transition-colors">{step.title}</h4>
-                      <p className="text-sm text-zinc-500 mt-2">{step.desc}</p>
+                      <h4 className="text-sm font-bold text-header-black uppercase group-hover:text-[#FE7623] transition-colors">{step.title}</h4>
+                      <p className="text-sm text-para-black mt-2">{step.desc}</p>
                     </div>
                   ))}
                 </div>
               </div>
               <div data-animate="expect" className={`bg-white rounded-2xl p-8 border border-zinc-100 shadow-sm h-fit hover:shadow-xl transition-all duration-500 ${isVisible('expect') ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-                <h3 className="text-xl font-semibold text-zinc-900 mb-6">What to Expect</h3>
+                <h3 className="text-xl font-semibold text-header-black mb-6">What to Expect</h3>
                 <div className="mb-8">
-                  <h4 className="text-sm font-bold text-zinc-900 mb-4">You will receive:</h4>
+                  <h4 className="text-sm font-bold text-header-black mb-4">You will receive:</h4>
                   <ul className="space-y-3">
                     {["Support bra guidance (typically 6 weeks)", "Pain relief medication & Antibiotics", "Wound care instructions", "Scheduled surgeon follow-up visits"].map((item, i) => (
-                      <li key={i} className="flex items-center gap-3 text-sm text-zinc-600 hover:text-[#FE7623] transition-colors cursor-pointer group">
+                      <li key={i} className="flex items-center gap-3 text-sm text-para-black hover:text-[#FE7623] transition-colors cursor-pointer group">
                         <svg className="w-4 h-4 text-[#FE7623] group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                         {item}
                       </li>
@@ -456,12 +456,12 @@ export default function BreastLiftMalaysia() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div data-animate="candidates" className={`transition-all duration-700 ${isVisible('candidates') ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-                <h3 className="text-3xl font-semibold text-zinc-900 mb-6">Who Is a Good Candidate?</h3>
+                <h3 className="text-3xl font-semibold text-header-black mb-6">Who Is a Good Candidate?</h3>
                 <ul className="space-y-4 mb-8">
                   {["Sagging breasts or downward-pointing nipples.", "Stable weight and good overall health.", "Finished breastfeeding and pregnancy plans (recommended).", "Non-smoker or willing to stop temporarily.", "Realistic expectations."].map((item, i) => (
                     <li key={i} className="flex items-start gap-4 group cursor-pointer">
                       <div className="mt-1 min-w-[20px] text-[#FE7623] group-hover:scale-110 transition-transform"><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
-                      <span className="text-sm text-zinc-700 font-medium group-hover:text-[#FE7623] transition-colors">{item}</span>
+                      <span className="text-sm text-header-black font-medium group-hover:text-[#FE7623] transition-colors">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -471,7 +471,7 @@ export default function BreastLiftMalaysia() {
                 </div>
               </div>
               <div data-animate="benefits" className={`transition-all duration-700 ${isVisible('benefits') ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-                <h3 className="text-3xl font-semibold text-zinc-900 mb-6">Benefits of a Breast Lift</h3>
+                <h3 className="text-3xl font-semibold text-header-black mb-6">Benefits of a Breast Lift</h3>
                 <div className="grid grid-cols-1 gap-4">
                   {[
                     { icon: "M5 10l7-7m0 0l7 7m-7-7v18", text: "Restores youthful breast height and contour" },
@@ -482,7 +482,7 @@ export default function BreastLiftMalaysia() {
                   ].map((item, i) => (
                     <div key={i} className="flex gap-4 items-center p-4 rounded-lg bg-zinc-50 hover:bg-[#FE7623] group transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:shadow-lg">
                       <div className="p-2 bg-white rounded-md shadow-sm text-[#FE7623] group-hover:bg-white/20 group-hover:text-white transition-all"><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={item.icon} /></svg></div>
-                      <span className="text-sm font-semibold text-zinc-900 group-hover:text-white transition-colors">{item.text}</span>
+                      <span className="text-sm font-semibold text-header-black group-hover:text-white transition-colors">{item.text}</span>
                     </div>
                   ))}
                 </div>
@@ -506,7 +506,7 @@ export default function BreastLiftMalaysia() {
               <div key={i} className="bg-zinc-800 p-6 rounded-xl border border-zinc-700 hover:border-[#FE7623] hover:-translate-y-2 hover:shadow-xl hover:shadow-[#FE7623]/10 transition-all duration-500 group cursor-pointer">
                 <svg className="w-8 h-8 text-[#FE7623] mb-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={item.icon} /></svg>
                 <h4 className="font-bold text-white mb-2 text-sm group-hover:text-[#FE7623] transition-colors">{item.title}</h4>
-                <p className="text-xs text-zinc-400 group-hover:text-zinc-300 transition-colors">{item.desc}</p>
+                <p className="text-xs text-para-black group-hover:text-white/70 transition-colors">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -515,7 +515,7 @@ export default function BreastLiftMalaysia() {
         {/* Testimonials */}
         <section className="py-24 px-6 bg-white border-b border-zinc-100">
           <div className="max-w-7xl mx-auto">
-            <h2 data-animate="testimonials" className={`text-2xl font-semibold text-zinc-900 mb-12 text-center transition-all duration-700 ${isVisible('testimonials') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Patient Experiences</h2>
+            <h2 data-animate="testimonials" className={`text-2xl font-semibold text-header-black mb-12 text-center transition-all duration-700 ${isVisible('testimonials') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Patient Experiences</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 { name: "Amira", age: "34", text: "My breasts look lifted and natural again after breastfeeding. Dr. Soma was very clear and professional throughout." },
@@ -526,12 +526,12 @@ export default function BreastLiftMalaysia() {
                   <div className="flex gap-1 text-[#FE7623] mb-6">
                     {[...Array(5)].map((_, j) => <svg key={j} className="w-3 h-3 fill-current group-hover:scale-110 transition-transform" style={{transitionDelay: `${j * 50}ms`}} viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>)}
                   </div>
-                  <p className="text-sm text-zinc-600 leading-relaxed mb-6">&ldquo;{review.text}&rdquo;</p>
+                  <p className="text-sm text-para-black leading-relaxed mb-6">&ldquo;{review.text}&rdquo;</p>
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-xs font-bold text-zinc-400 group-hover:bg-[#FE7623] group-hover:text-white group-hover:border-[#FE7623] transition-all">{review.name[0]}</div>
+                    <div className="w-8 h-8 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-xs font-bold text-para-black group-hover:bg-[#FE7623] group-hover:text-white group-hover:border-[#FE7623] transition-all">{review.name[0]}</div>
                     <div>
-                      <p className="text-sm font-bold text-zinc-900">{review.name}, {review.age}</p>
-                      <p className="text-xs text-zinc-400">Patient</p>
+                      <p className="text-sm font-bold text-header-black">{review.name}, {review.age}</p>
+                      <p className="text-xs text-para-black">Patient</p>
                     </div>
                   </div>
                 </div>
@@ -545,13 +545,13 @@ export default function BreastLiftMalaysia() {
           <div data-animate="pricing" className={`max-w-4xl mx-auto text-center transition-all duration-700 ${isVisible('pricing') ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
             <h2 className="text-2xl font-semibold mb-6">Pricing Guide</h2>
             <div className="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm hover:shadow-xl transition-all duration-500">
-              <p className="text-zinc-600 text-sm mb-6">Breast lift cost varies depending on:</p>
+              <p className="text-para-black text-sm mb-6">Breast lift cost varies depending on:</p>
               <div className="flex flex-wrap justify-center gap-3 mb-8">
                 {["Technique required", "Degree of sagging", "Implants (if added)", "Operating time", "Hospital/Anaesthesia"].map((item, i) => (
-                  <span key={i} className="px-3 py-1 bg-zinc-100 rounded-full text-xs text-zinc-600 hover:bg-[#FE7623] hover:text-white transition-all duration-300 cursor-pointer">{item}</span>
+                  <span key={i} className="px-3 py-1 bg-zinc-100 rounded-full text-xs text-para-black hover:bg-[#FE7623] hover:text-white transition-all duration-300 cursor-pointer">{item}</span>
                 ))}
               </div>
-              <p className="text-sm font-semibold text-zinc-900">A full quotation is provided after consultation.</p>
+              <p className="text-sm font-semibold text-header-black">A full quotation is provided after consultation.</p>
             </div>
           </div>
         </section>
@@ -560,13 +560,13 @@ export default function BreastLiftMalaysia() {
         <section className="py-50 lg:py-100 bg-[#FAFAF9]">
           <div className="max-w-4xl mx-auto px-6">
             <div data-animate="faq-header" className={`text-center mb-16 transition-all duration-700 ${isVisible('faq-header') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <span className="inline-block bg-white text-[#666666] font-normal px-4 py-1.5 mb-6 border border-[#E8E8E8] rounded-full text-sm hover:border-[#FE7623] hover:text-[#FE7623] transition-colors cursor-pointer">
+              <span className="inline-block bg-white text-para-black font-normal px-4 py-1.5 mb-6 border border-[#E8E8E8] rounded-full text-sm hover:border-[#FE7623] hover:text-[#FE7623] transition-colors cursor-pointer">
                 FAQ
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-5">
+              <h2 className="text-3xl md:text-4xl font-bold text-header-black mb-5">
                 Frequently Asked Questions
               </h2>
-              <p className="text-[17px] text-[#666666]">
+              <p className="text-[17px] text-para-black">
                 Clear answers to help you make informed decisions
               </p>
             </div>
@@ -587,10 +587,10 @@ export default function BreastLiftMalaysia() {
                     }`}
                     onClick={() => toggleFaq(index)}
                   >
-                    <span className={`text-[17px] font-medium pr-4 transition-colors ${openFaq === index ? 'text-[#FE7623]' : 'text-[#1A1A1A]'}`}>{faq.question}</span>
+                    <h5 className={`text-primary font-medium pr-4 transition-colors`}>{faq.question}</h5>
                     <svg
                       className={`w-5 h-5 transition-all duration-300 flex-shrink-0 ${
-                        openFaq === index ? 'rotate-180 text-[#FE7623]' : 'text-[#666666]'
+                        openFaq === index ? 'rotate-180 text-[#FE7623]' : 'text-para-black'
                       }`}
                       fill="none"
                       stroke="currentColor"
@@ -605,7 +605,7 @@ export default function BreastLiftMalaysia() {
                     }`}
                   >
                     <div className="px-8 pb-6 bg-[#FAFAF9] border-t border-[#E8E8E8]">
-                      <p className="text-[16px] text-[#444444] leading-relaxed pt-4">{faq.answer}</p>
+                      <p className="text-[16px] text-para-black leading-relaxed pt-4">{faq.answer}</p>
                     </div>
                   </div>
                 </div>
@@ -617,19 +617,19 @@ export default function BreastLiftMalaysia() {
         {/* Final CTA */}
         <section id="contact" className="py-24 px-6 bg-zinc-50">
           <div data-animate="cta" className={`max-w-4xl mx-auto text-center transition-all duration-700 ${isVisible('cta') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="text-3xl md:text-4xl font-semibold text-zinc-900 mb-6">Restore a Youthful, Lifted Shape</h2>
-            <p className="text-lg text-zinc-500 mb-10 max-w-xl mx-auto">Dr. Soma combines medical precision, aesthetic planning, and safety-first technique to deliver natural, long-lasting contour improvement.</p>
+            <h2 className="text-3xl md:text-4xl font-semibold text-header-black mb-6">Restore a Youthful, Lifted Shape</h2>
+            <p className="text-lg text-para-black mb-10 max-w-xl mx-auto">Dr. Soma combines medical precision, aesthetic planning, and safety-first technique to deliver natural, long-lasting contour improvement.</p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <a href="https://wa.me/" className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-[#FE7623] text-white px-8 py-3.5 rounded-md text-sm font-semibold hover:bg-[#e56010] hover:scale-105 hover-glow transition-all duration-300 shadow-lg shadow-orange-200">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
                 Chat on WhatsApp
               </a>
-              <a href="#" className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-white text-zinc-900 border border-zinc-200 px-8 py-3.5 rounded-md text-sm font-medium hover:bg-zinc-50 hover:border-[#FE7623] hover:text-[#FE7623] hover:scale-105 transition-all duration-300 group">
+              <a href="#" className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-white text-header-black border border-zinc-200 px-8 py-3.5 rounded-md text-sm font-medium hover:bg-zinc-50 hover:border-[#FE7623] hover:text-[#FE7623] hover:scale-105 transition-all duration-300 group">
                 Book a Consultation Today
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
               </a>
             </div>
-            <p className="mt-8 text-xs text-zinc-400">Certified Plastic Surgeon - Kuala Lumpur, Malaysia</p>
+            <p className="mt-8 text-xs text-para-black">Certified Plastic Surgeon - Kuala Lumpur, Malaysia</p>
           </div>
         </section>
       </main>
