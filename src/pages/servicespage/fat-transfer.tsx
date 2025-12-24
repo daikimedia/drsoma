@@ -323,7 +323,7 @@ const FatTransfer = () => {
             title: "Liposuction",
             description: "Remove unwanted fat and sculpt your body with advanced liposuction techniques",
             image: "/images/liposuction.png",
-            href: "/servicespage/liposuction-malaysia-remove-unwanted-fat",
+            href: "/body/liposuction-malaysia",
             badge: "Related",
             badgeColor: "primary"
           },
@@ -331,7 +331,7 @@ const FatTransfer = () => {
             title: "Tummy Tuck",
             description: "Flatten and tighten abdomen with abdominoplasty",
             image: "/images/tummy_tuck.png",
-            href: "/servicespage/tummy-tuck-surgery-in-malaysia",
+            href: "/body/tummy-tuck-malaysia",
             badge: "Popular",
             badgeColor: "blue"
           },

@@ -265,7 +265,7 @@ const LipFiller = () => {
             title: "Face Lift",
             description: "Comprehensive facial rejuvenation with advanced surgical techniques",
             image: "/images/face_lift_image.png",
-            href: "/servicespage/face-lift-malaysia-to-combat-aging",
+            href: "/face/face-lift-malaysia",
             badge: "Related",
             badgeColor: "primary"
           },
@@ -281,7 +281,7 @@ const LipFiller = () => {
             title: "Rhinoplasty",
             description: "Enhance nose appearance with precision surgical techniques",
             image: "/images/rhinoplasty_in_nose.png",
-            href: "/servicespage/rhinoplasty-in-malaysia-enhance-nose-appearance",
+            href: "/face/rhinoplasty-malaysia",
             badge: "Specialized",
             badgeColor: "purple"
           },

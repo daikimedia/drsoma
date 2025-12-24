@@ -221,7 +221,7 @@ const SixPackEnhancement = () => {
             title: "Rhinoplasty",
             description: "Enhance nose appearance with precision surgical techniques",
             image: "/images/rhinoplasty_in_nose.png",
-            href: "/servicespage/rhinoplasty-in-malaysia-enhance-nose-appearance",
+            href: "/face/rhinoplasty-malaysia",
             badge: "Popular",
             badgeColor: "blue"
           },
@@ -237,7 +237,7 @@ const SixPackEnhancement = () => {
             title: "Otoplasty",
             description: "Reshape and reposition ears for improved facial harmony",
             image: "/images/pinnaplasty_in_ear.png",
-            href: "/servicespage/otoplasty-pinnaplasty",
+            href: "/face/otoplasty-malaysia",
             badge: "Specialized",
             badgeColor: "purple"
           }

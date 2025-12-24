@@ -274,7 +274,7 @@ const AdvancedWoundManagement = () => {
             title: "Keloid Treatment",
             description: "Specialized treatment for keloid scars and wound complications",
             image: "/images/keloid_treatment.png",
-            href: "/servicespage/keloid-scar-treatment-in-malaysia",
+            href: "/aesthetic-treatments/keloid-treatment-malaysia",
             badge: "Related",
             badgeColor: "primary"
           },
@@ -298,7 +298,7 @@ const AdvancedWoundManagement = () => {
             title: "Cellular Rejuvenation",
             description: "Advanced therapies for cellular regeneration and rejuvenation",
             image: "/images/Safe_thread_in_face.png",
-            href: "/servicespage/cellular-rejuvenation-therapies",
+            href: "/regenerative-treatments/cellular-rejuvenation-malaysia",
             badge: "Specialized",
             badgeColor: "purple"
           }

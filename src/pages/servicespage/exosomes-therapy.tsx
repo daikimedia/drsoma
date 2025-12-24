@@ -303,7 +303,7 @@ const ExosomesTherapy = () => {
             title: "Cellular Rejuvenation",
             description: "Advanced therapies for cellular regeneration and rejuvenation",
             image: "/images/cellular_rejuvenation.png",
-            href: "/servicespage/cellular-rejuvenation-therapies",
+            href: "/regenerative-treatments/cellular-rejuvenation-malaysia",
             badge: "Related",
             badgeColor: "primary"
           },
@@ -327,7 +327,7 @@ const ExosomesTherapy = () => {
             title: "EXION",
             description: "The future of non-invasive aesthetic enhancement",
             image: "/images/skin_healing_image.png",
-            href: "/servicespage/exion",
+            href: "/regenerative-treatments/exion-treatment-malaysia",
             badge: "Non-Surgical",
             badgeColor: "green"
           }

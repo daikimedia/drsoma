@@ -27,7 +27,7 @@ const Footer = () => {
                       <Link href={"/"}>
                         <p className="text-para-white opacity-90">Home</p>
                       </Link>
-                      <Link href={"/aboutus"}>
+                      <Link href={"/about-dr-soma"}>
                         <p className="text-para-white opacity-90">About</p>
                       </Link>
                       <Link href={"/servicespage"}>

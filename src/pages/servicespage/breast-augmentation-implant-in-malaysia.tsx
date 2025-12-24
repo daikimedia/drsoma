@@ -325,7 +325,7 @@ const BreastAugmentationImplant = () => {
             title: "Breast Augmentation",
             description: "Enhance breast size and volume with premium implant options",
             image: "/images/breast_augmentation.png",
-            href: "/servicespage/breast-augmentation-implant-in-malaysia",
+            href: "/breast/breast-augmentation-malaysia",
             badge: "Current",
             badgeColor: "green"
           },

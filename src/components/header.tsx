@@ -11,8 +11,8 @@ const Header = () => {
   const router = useRouter();
 
   const linkClasses = (path: string) =>
-    `input hover:text-primary text-para-white ${
-      router.pathname === path ? "text-primary" : ""
+    `input hover:text-white text-para-white transition-colors ${
+      router.pathname === path ? "!text-white font-bold" : ""
     }`;
 
   const [sideNavOpened, setSideNavOpened] = useState(false);
@@ -50,8 +50,8 @@ const Header = () => {
                 <Link href={"/"}>
                   <h5 className={linkClasses("/")}>Home</h5>
                 </Link>
-                <Link href={"/aboutus"}>
-                  <h5 className={linkClasses("/aboutus")}>About</h5>
+                <Link href={"/about-dr-soma"}>
+                  <h5 className={linkClasses("/about-dr-soma")}>About</h5>
                 </Link>
                 <Link href={"/servicespage"}>
                   <h5 className={linkClasses("/servicespage")}>Services</h5>
@@ -61,8 +61,8 @@ const Header = () => {
                     Success Stories
                   </h5>
                 </Link>
-                <Link href={"/blog"}>
-                  <h5 className={linkClasses("/blog")}>Blog</h5>
+                <Link href={"/blogs"}>
+                  <h5 className={linkClasses("/blogs")}>Blog</h5>
                 </Link>
                 <Link href={"/contact-us"}>
                   <h5 className={linkClasses("/contact-us")}>Contact</h5>
@@ -100,8 +100,8 @@ const Header = () => {
           <Link href={"/"} onClick={handleSideNav}>
             <h5 className={linkClasses("/")}>Home</h5>
           </Link>
-          <Link href={"/aboutus"} onClick={handleSideNav}>
-            <h5 className={linkClasses("/aboutus")}>About</h5>
+          <Link href={"/about-dr-soma"} onClick={handleSideNav}>
+            <h5 className={linkClasses("/about-dr-soma")}>About</h5>
           </Link>
           <Link href={"/servicespage"} onClick={handleSideNav}>
             <h5 className={linkClasses("/servicespage")}>Services</h5>
@@ -109,8 +109,8 @@ const Header = () => {
           <Link href={"/success-stories"} onClick={handleSideNav}>
             <h5 className={linkClasses("/success-stories")}>Success Stories</h5>
           </Link>
-          <Link href={"/blog"} onClick={handleSideNav}>
-            <h5 className={linkClasses("/blog")}>Blog</h5>
+          <Link href={"/blogs"} onClick={handleSideNav}>
+            <h5 className={linkClasses("/blogs")}>Blog</h5>
           </Link>
           <Link href={"/contact-us"} onClick={handleSideNav}>
             <h5 className={linkClasses("/contact-us")}>Contact</h5>

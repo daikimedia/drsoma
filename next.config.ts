@@ -1,12 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Remove static export to enable SSR/ISR for dynamic blog pages
-  // output: 'export',
+  // Enable static export for live server deployment
+  output: 'export',
   trailingSlash: true,
   images: {
-    // Enable image optimization for SSR
-    unoptimized: false,
+    // Required for static export
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -15,10 +15,6 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'nexub-prod.sgp1.digitaloceanspaces.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'cdn.sanity.io',
       },
     ],
   },
@@ -29,8 +25,6 @@ const nextConfig: NextConfig = {
     });
     return config;
   },
-  // Transpile Sanity packages
-  transpilePackages: ['sanity', '@sanity/vision', 'next-sanity'],
 };
 
 export default nextConfig;

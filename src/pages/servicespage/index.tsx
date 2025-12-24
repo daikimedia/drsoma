@@ -76,7 +76,7 @@ const Services = () => {
               isVisible('section-0') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}>
               <Link
-                href={"/servicespage/liposuction-malaysia-remove-unwanted-fat"}
+                href={"/body/liposuction-malaysia"}
                 className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-slideInUp"
                 style={{ animationDelay: isVisible('section-0') ? '0.1s' : '0s' }}
               >
@@ -94,7 +94,7 @@ const Services = () => {
                 </h4>
               </Link>
               <Link
-                href={"/servicespage/tummy-tuck-surgery-in-malaysia"}
+                href={"/body/tummy-tuck-malaysia"}
                 className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-slideInUp"
                 style={{ animationDelay: isVisible('section-0') ? '0.2s' : '0s' }}
               >
@@ -112,7 +112,7 @@ const Services = () => {
                 </h4>
               </Link>
               <Link
-                href={"/servicespage/keloid-scar-treatment-in-malaysia"}
+                href={"/aesthetic-treatments/keloid-treatment-malaysia"}
                 className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-slideInUp"
                 style={{ animationDelay: isVisible('section-0') ? '0.3s' : '0s' }}
               >
@@ -128,6 +128,17 @@ const Services = () => {
                 <h4 className="absolute bottom-6 left-4 right-4 text-white font-semibold text-lg text-center">
                   Keloid Treatment
                 </h4>
+              </Link>
+            </div>
+            <div className="flex justify-center mt-8">
+              <Link
+                href="/body"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-[#ea622f] hover:bg-[#d55526] text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                View All Body Treatments
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
               </Link>
             </div>
           </div>
@@ -151,7 +162,7 @@ const Services = () => {
               isVisible('section-1') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}>
               <Link
-                href={"/servicespage/face-lift-malaysia-to-combat-aging"}
+                href={"/face/face-lift-malaysia"}
                 className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-slideInUp"
                 style={{ animationDelay: isVisible('section-1') ? '0.1s' : '0s' }}
               >
@@ -187,7 +198,7 @@ const Services = () => {
                 </h4>
               </Link>
               <Link
-                href={"/servicespage/rhinoplasty-in-malaysia-enhance-nose-appearance"}
+                href={"/face/rhinoplasty-malaysia"}
                 className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-slideInUp"
                 style={{ animationDelay: isVisible('section-1') ? '0.3s' : '0s' }}
               >
@@ -223,7 +234,7 @@ const Services = () => {
                 </h4>
               </Link>
               <Link
-                href={"/servicespage/otoplasty-pinnaplasty"}
+                href={"/face/otoplasty-malaysia"}
                 className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-slideInUp"
                 style={{ animationDelay: isVisible('section-1') ? '0.5s' : '0s' }}
               >
@@ -259,6 +270,17 @@ const Services = () => {
                 </h4>
               </Link>
             </div>
+            <div className="flex justify-center mt-8">
+              <Link
+                href="/face"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-[#ea622f] hover:bg-[#d55526] text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                View All Face Treatments
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -276,7 +298,7 @@ const Services = () => {
                 </p>
               </div>
             </div>
-            <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full transition-all duration-700 ${
+            <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 w-full transition-all duration-700 ${
               isVisible('section-2') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}>
               <Link
@@ -298,7 +320,7 @@ const Services = () => {
                 </h4>
               </Link>
               <Link
-                href={"/servicespage/breast-augmentation-implant-in-malaysia"}
+                href={"/breast/breast-augmentation-malaysia"}
                 className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-slideInUp"
                 style={{ animationDelay: isVisible('section-2') ? '0.2s' : '0s' }}
               >
@@ -352,6 +374,17 @@ const Services = () => {
                 </h4>
               </Link> */}
             </div>
+            <div className="flex justify-center mt-8">
+              <Link
+                href="/breast"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-[#ea622f] hover:bg-[#d55526] text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                View All Breast Treatments
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -359,16 +392,25 @@ const Services = () => {
       <section className="py-30 lg:py-60" ref={maleRef}>
         <div className="flex containers w-full">
           <div className="flex flex-col gap-30 w-full">
-            <div className={`flex w-full py-[33px] px-40 rounded-[16px] bg-para-white transition-all duration-700 ${
+            <div className={`flex w-full bg-para-white rounded-[16px] overflow-hidden transition-all duration-700 ${
               isVisible('section-3') ? 'animate-fadeIn opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}>
-              <div className="flex w-full flex-col gap-[10px] max-w-[892px]">
+              <div className="flex w-full flex-col gap-[10px] py-[33px] px-40 max-w-[668px]">
                 <h2 className="text-header-black">
                   Male Cosmetic Surgery and Treatment
                 </h2>
                 <p className="text-header-black">
                   Specialized cosmetic procedures designed specifically for men to enhance confidence and achieve desired physical improvements. Our male-focused treatments address unique aesthetic concerns with discretion and professional care.
                 </p>
+              </div>
+              <div className="hidden md:flex flex-shrink-0 w-[250px] ml-auto self-stretch">
+                <Image
+                  src="/images/natural.jpg"
+                  width={250}
+                  height={200}
+                  alt="Male Cosmetic Surgery"
+                  className="h-full w-full object-cover object-center"
+                />
               </div>
             </div>
             <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 w-full transition-all duration-700 ${
@@ -410,13 +452,13 @@ const Services = () => {
                   Gynecomastia: Male Breast Reduction
                 </h4>
               </Link>
-              {/* <Link
+              <Link
                 href={"/servicespage/penile-enhancement"}
                 className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-slideInUp"
                 style={{ animationDelay: isVisible('section-3') ? '0.3s' : '0s' }}
               >
                 <Image
-                  src="/images/keloid_treatment.png"
+                  src="/images/Penile Enhancement men.jpg"
                   width={280}
                   height={320}
                   loading="lazy"
@@ -427,7 +469,18 @@ const Services = () => {
                 <h4 className="absolute bottom-6 left-4 right-4 text-white font-semibold text-lg text-center">
                   Penile Enhancement
                 </h4>
-              </Link> */}
+              </Link>
+            </div>
+            <div className="flex justify-center mt-8">
+              <Link
+                href="/male"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-[#ea622f] hover:bg-[#d55526] text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                View All Male Treatments
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </Link>
             </div>
           </div>
         </div>
@@ -486,7 +539,7 @@ const Services = () => {
                 </h4>
               </Link>
               <Link
-                href={"/servicespage/cellular-rejuvenation-therapies"}
+                href={"/regenerative-treatments/cellular-rejuvenation-malaysia"}
                 className="group relative overflow-hidden rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-slideInUp"
                 style={{ animationDelay: isVisible('section-4') ? '0.3s' : '0s' }}
               >
@@ -504,7 +557,7 @@ const Services = () => {
                 </h4>
               </Link>
               <Link
-                href={"/servicespage/exion"}
+                href={"/regenerative-treatments/exion-treatment-malaysia"}
                 className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-slideInUp"
                 style={{ animationDelay: isVisible('section-4') ? '0.4s' : '0s' }}
               >
