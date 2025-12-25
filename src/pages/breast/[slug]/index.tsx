@@ -2081,7 +2081,7 @@ export default function BreastTreatmentPage({ treatment }: PageProps) {
 
 export async function getStaticPaths() {
   // Exclude slugs that have their own static pages
-  const excludedSlugs = ['breast-reduction-malaysia', 'fat-transfer-breast-augmentation-malaysia', 'breast-implant-removal-malaysia'];
+  const excludedSlugs = ['breast-reduction-malaysia', 'fat-transfer-breast-augmentation-malaysia', 'breast-implant-removal-malaysia', 'breast-revision-surgery-malaysia'];
 
   const paths = Object.keys(breastTreatmentsData as Record<string, TreatmentData>)
     .filter((slug) => !excludedSlugs.includes(slug))
