@@ -452,7 +452,7 @@ const Index = () => {
                   <div className="flex justify-center">
                     <button 
                       className="px-6 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 text-sm"
-                      onClick={() => router.push('/servicespage/liposuction-malaysia-remove-unwanted-fat')}
+                      onClick={() => router.push('/body/liposuction-malaysia')}
                     >
                       Learn More
                     </button>
